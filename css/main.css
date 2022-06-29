@@ -3,7 +3,8 @@
 :root {
     --main-bg: #ffffff;
     --second-bg: #f5f5f5;
-    --main-color: #349eff;
+    --main-color: rgb(252, 213, 53);
+    --text-color: rgb(242, 196, 15);
     --second-color: #62b4ff;
 
     --box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
@@ -32,6 +33,11 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
+    color: var(--main-color) !important;
+}
+
+.fs-xxl {
+    font-size: 5rem;
 }
 
 ul {
@@ -49,5 +55,45 @@ p {
 }
 
 .fs-xxl {
-    font-size: 5rem;
+    font-size: 4rem;
+}
+
+.fs-7 {
+    font-size: .9rem;
+}
+
+.bg-yellow {
+    background-color: var(--main-color);
+}
+
+.text-yellow {
+    color: var(--text-color);
+}
+
+.bg-hero {
+    background: linear-gradient(90deg, rgba(180, 180, 184, 0.14049369747899154) 0%, rgba(128, 128, 145, 0.18531162464985995) 16%, rgba(196, 203, 204, 0.053658963585434205) 100%);
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.btn-hover:hover {
+    color: var(--main-bg) !important;
+}
+
+.category-box:hover{
+    box-shadow: var(--box-shadow);
+}
+@media (min-width: 992px) {
+    .category-box:hover a{
+        display: flex !important;
+    }
 }
